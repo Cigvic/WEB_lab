@@ -28,8 +28,13 @@ a{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  
+  position: fixed;
+  z-index: 10;
+  background:#FFBE00;
+  max-height: 70px; 
 }
+
+
 .header_menu {
   width: 60%;  
   display: flex;
@@ -114,10 +119,8 @@ a{
 
 .imglogo
 {
-width: 157px;
-height: 118px;
-
-background: url("img/Logo.png");
+height: 60px;
+z-index: 11;
 }
 .imghead
 {
