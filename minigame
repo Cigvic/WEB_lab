@@ -1,0 +1,12 @@
+<div class="tasks" id="minigame">
+      <ul class="tasks__list">
+        <li class="tasks__item" style ="background: green"  >   </li>
+        <li class="tasks__item" style ="background: red ">  </li>
+        <li class="tasks__item" style ="background: purple" >  </li>
+        <li class="tasks__item" style ="background: blue">  </li>
+        <li class="tasks__item" style ="background: skyblue"> </li>
+        <li class="tasks__item" style ="background: yellow">  </li>
+        <li class="tasks__item" style ="background: orange"> </li>
+      </ul>
+      <div class="progress"></div>
+    </div>
