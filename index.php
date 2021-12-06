@@ -1,3 +1,5 @@
 <?
-  echo (file_get_contents("Site.html"))  
+  echo (file_get_contents("Site.html"));
+  require('feedback.html');
+    
 ?>
