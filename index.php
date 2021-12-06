@@ -1,5 +1,7 @@
 <?
-  echo (file_get_contents("Site.html"));
+  require('Site.html');
+  require('faq.html');
   require('feedback.html');
+  require('minigame.html');
     
 ?>
