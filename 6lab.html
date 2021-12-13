@@ -39,7 +39,15 @@
     </div> 
     
     <div id="objects">
-        {objects}
+         <?php
+        $C = $_GET["C"];
+  switch($C) {
+    case "1": echo(file_get_contents("faq.html")); break;
+    case "2": echo(file_get_contents("feedback.html")); break;
+    case "3": echo(file_get_contents("minigame.html")); break;
+    default:  echo(file_get_contents("faq.html"));
+  }
+     ?>
     </div>
 
   </body>
