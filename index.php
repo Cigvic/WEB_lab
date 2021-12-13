@@ -26,13 +26,7 @@ $C = $_GET["C"];
     case "1": $objects=file_get_contents("faq.html"); break;
     case "2": $objects=file_get_contents("feedback.html"); break;
     case "3": $objects=file_get_contents("minigame.html"); break;
-    case "99": {
-      ob_start('load_content')
-      include("registration_form.php");
-      ob_end_flush();
-      break;
-    }
-  };
+  }
 $tmp = str_replace("{objects}"), $objects, $tmp);
 echo $tmp;  
 
