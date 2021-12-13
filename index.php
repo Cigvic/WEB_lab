@@ -1,9 +1,8 @@
-<?php
-
-$text = "Это текст";
-
-$title = "Это заголовок";
-
-include "template.html";
-
+<?
+require('Site.html');
+require('faq.html');
+require('feedback.html');
+require('minigame.html');
 ?>
+
+
