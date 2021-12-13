@@ -23,9 +23,6 @@ function ready() {
 function init() {
 console.log("init")
 
-window.onbeforeunload = function() {
-  return 1
-};
 
 const check = (e) => {
     const form = new FormData(e.target);
