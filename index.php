@@ -14,15 +14,29 @@
   </head>
   <body> 
     
-<?
-require('Site.html');
-require('faq.html');
-require('feedback.html');
-require('minigame.html');
+<?php 
+$tmp=file_get_contents("6lab.html");
+$objects="";
+function load_content($s)
+{
+  $GLOBALS['content'].=$s;
+}
+$C = $_GET["C"];
+  switch($C) {
+    case "1": $objects=file_get_contents("faq.html"); break;
+    case "2": $objects=file_get_contents("feedback.html"); break;
+    case "3": $objects=file_get_contents("minigame.html"); break;
+    case "99": {
+      ob_start('load_content')
+      include("registration_form.php");
+      ob_end_flush();
+      break;
+    }
+  };
+$tmp = str_replace("{objects}"), $objects, $tmp);
+echo $tmp;  
+
 ?>
 
   </body>
 </html>
-
-
-
